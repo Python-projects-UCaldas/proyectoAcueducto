@@ -1,0 +1,166 @@
+{
+    "vertices": [
+        {
+            "ID": "a", 
+            "capacidad": 100,
+            "posX": 300,
+            "posY": 250,
+            "barrio":"peralonso",
+            "adyacencia": [{"b":8}, {"c":10}]
+        }, 
+        {
+            "ID": "b", 
+            "capacidad": 100,
+            "posX": 550,
+            "posY": 100,
+            "barrio":"caribe",
+            "adyacencia": [{"f":1}]
+        },
+         {
+            "ID": "c", 
+            "capacidad": 100,
+            "posX": 550,
+            "posY": 450,
+            "barrio":"centro",
+            "adyacencia": [{"b":2}, {"d":6}, {"f":5}]
+        },
+        {
+            "ID": "d", 
+            "capacidad": 100,
+            "posX": 675,
+            "posY": 600,
+            "barrio":"chipre",
+            "adyacencia": [{"e":7}]
+        },
+        {
+            "ID": "e", 
+            "capacidad": 100,
+            "posX": 800,
+            "posY": 450,
+            "barrio":"villaPilar",
+            "adyacencia": [{"c":1}, {"g":2}]
+        },
+        {
+            "ID": "f", 
+            "capacidad": 100,
+            "posX": 800,
+            "posY": 100,
+            "barrio":"enea",
+            "adyacencia": [{"g":9}]
+        },
+        {
+            "ID": "g", 
+            "capacidad": 100,
+            "posX": 1050,
+            "posY": 250,
+            "barrio":"bengala",
+            "adyacencia": [{"c":3}, {"h":15}]
+        },
+        {
+            "ID": "h", 
+            "capacidad": 100,
+            "posX": 1050,
+            "posY": 450,
+            "barrio":"palermo",
+            "adyacencia": []
+        }
+    ],
+    "Aristas": [
+         {
+            "origen": "a", 
+            "destino": "b",
+            "peso": 8,
+            "posOri": [350, 260],
+            "posDest": [575, 110],
+            "activa": true
+        }, 
+        {
+            "origen": "a", 
+            "destino": "c",
+            "peso": 10,
+            "posOri":[350, 260],
+            "posDest": [575, 460],
+            "activa": true
+        }, 
+         {
+            "origen": "b", 
+            "destino": "f",
+            "peso": 4,
+            "posOri": [600, 110],
+            "posDest":[820, 110],
+            "activa": true
+        }, 
+        {
+            "origen": "c", 
+            "destino": "b",
+            "peso": 2,
+            "posOri": [600, 460],
+            "posDest":[600, 110],
+            "activa": false
+        }, 
+        {
+            "origen": "c", 
+            "destino": "d",
+            "peso": 6,
+            "posOri": [600, 460],
+            "posDest":[710,605],
+            "activa": true
+        }, 
+        {
+            "origen": "c", 
+            "destino": "f",
+            "peso": 5,
+            "posOri":[600, 460],
+            "posDest":[820, 110],
+            "activa": true
+        }, 
+        {
+            "origen": "d", 
+            "destino": "e",
+            "peso": 7,
+            "posOri": [710,605],
+            "posDest":[820,460],
+            "activa": true
+        }, 
+        {
+            "origen": "e", 
+            "destino": "c",
+            "peso": 1,
+            "posOri": [820,460],
+            "posDest":[600, 460],
+            "activa": true
+        },
+        {
+            "origen": "e", 
+            "destino": "g",
+            "peso": 11,
+            "posOri": [835,475],
+            "posDest":[1070,260],
+            "activa": true
+        },
+        {
+            "origen": "f", 
+            "destino": "g",
+            "peso": 9,
+            "posOri": [850,110],
+            "posDest":[1070,260],
+            "activa": true
+        },
+        {
+            "origen": "g", 
+            "destino": "c",
+            "peso": 3,
+            "posOri": [1070,260],
+            "posDest":[600, 460],
+            "activa": true
+        },
+        {
+            "origen": "g", 
+            "destino": "h",
+            "peso": 15,
+            "posOri": [1070,260],
+            "posDest":[1070,460],
+            "activa": true
+        } 
+    ]
+}
